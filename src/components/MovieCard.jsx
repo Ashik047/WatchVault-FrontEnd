@@ -25,14 +25,14 @@ const MovieCard = ({ movie, displayControls, movieIds, setListMovies, displayWat
                     displayControls ?
                         (<div className="flex gap-1 flex-wrap flex-row justify-start">
                             {displayWatched ?
-                                <button onClick={() => handleWatched(movie, setListMovies)} className='bg-green-600 text-black hover:bg-green-400 w-3/4 rounded-lg p-2 text-center transition__colors font-extrabold sm:ms-0 sm:w-[150px]'>Watched</button> :
-                                <button onClick={() => handleUnwatched(movie, setListMovies)} className='bg-green-600 text-black hover:bg-green-400 w-3/4 rounded-lg p-2 text-center transition__colors font-extrabold sm:ms-0 sm:w-[150px]'>Unwatched</button>
+                                <button onClick={() => handleWatched(movie, setListMovies)} className='bg-green-600 text-black hover:bg-green-400 w-3/4 rounded-lg p-2 text-center transition__colors font-extrabold mx-auto sm:mx-0 sm:w-[150px]'>Watched</button> :
+                                <button onClick={() => handleUnwatched(movie, setListMovies)} className='bg-green-600 text-black hover:bg-green-400 w-3/4 rounded-lg p-2 text-center transition__colors font-extrabold mx-auto sm:mx-0 sm:w-[150px]'>Unwatched</button>
                             }
-                            <button onClick={() => handleRemove(movie, setListMovies)} className='bg-red-600 text-black hover:bg-red-400 w-3/4 rounded-lg p-2 text-center transition__colors font-extrabold sm:ms-0 sm:w-[150px]'>Remove</button>
+                            <button onClick={() => handleRemove(movie, setListMovies)} className='bg-red-600 text-black hover:bg-red-400 w-3/4 rounded-lg p-2 text-center transition__colors font-extrabold mx-auto sm:mx-0 sm:w-[150px]'>Remove</button>
                         </div>) :
                         ((movieIds.includes(movie.id)) ?
-                            <button className='bg-gray-600 text-white w-3/4 rounded-lg p-2 text-center transition__colors font-extrabold sm:ms-0 sm:w-[150px]' disabled>In Watchlist</button> :
-                            <button onClick={() => handleAdd(movie, setListMovies)} className='bg-green-600 text-black hover:bg-green-400 w-3/4 rounded-lg p-2 text-center transition__colors font-extrabold sm:ms-0 sm:w-[150px]'>Add to Watchlist</button>)
+                            <button className='bg-gray-600 text-white w-3/4 rounded-lg p-2 text-center transition__colors font-extrabold mx-auto sm:mx-0 sm:w-[150px]' disabled>In Watchlist</button> :
+                            <button onClick={() => handleAdd(movie, setListMovies)} className='bg-green-600 text-black hover:bg-green-400 w-3/4 rounded-lg p-2 text-center transition__colors font-extrabold mx-auto sm:mx-0 sm:w-[150px]'>Add to Watchlist</button>)
                 }
             </section>
         </div>
