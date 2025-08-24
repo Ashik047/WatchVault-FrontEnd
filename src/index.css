@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+/* setting default styles */
+html {
+    font-size: clamp(12px, 10.8576px + 0.3571vw, 16px);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Playfair Display", serif;
+}
+
+input,
+button {
+    font: inherit;
+}
+
+image {
+    display: block;
+}
+
+/* background for New, Watchlist and Completed components */
+.linear-bg {
+    background-image: linear-gradient(135deg, #DCDCDC, #a2e5ff);
+}
+
+/* transition for colors, background-colors and scale */
+.transform-animation-box {
+    transition: transform 0.25s;
+
+}
+
+/* Created by Ashik Biju | 2025 */
+.transform-animation-box:hover {
+    transform: scale(1.05);
+
+}
+
+.transform-animation-arrow {
+    transition: transform 0.25s;
+
+}
+
+.transform-animation-arrow:hover {
+    transform: scale(1.3);
+
+}
+
+.transition__colors {
+    transition: color 0.3s, background-color 0.3s;
+}
+
+/* tailwindcss */
+@theme {
+    --font-cursive: "Meow Script", cursive;
+    --font-body: "Rubik", sans-serif;
+    --bg-image-home: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/bgHome.jpg");
+    --color-bg-black: rgba(0, 0, 0, 0.5);
+    --page-height: calc(100vh - 82px);
+    --animate-navbar: navbar 1s ease-in-out forwards;
+
+
+}
